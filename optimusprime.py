@@ -16,10 +16,10 @@ def optimusPrime(test_num):
         return
     #check if number is divisible by 2 and/or <=7 or zero,
     #then create list for prime test
-    if test_num == 0:
-        print "Zero not valid"
+    if test_num in (0,1):
+        print "Number {} is not a prime".format(test_num)
         return
-    elif test_num in (1,2,3,5,7):
+    elif test_num in (2,3,5,7):
         print "Number {} is a prime".format(test_num)
         return
     elif test_num % 2 == 0:
